@@ -1,7 +1,7 @@
 if(RailsExceptionHandler.configuration.activate?)
   class ErrorResponseController < ApplicationController
     def index
-      render(:text => @_env['exception_handler.response'], :layout => @_env['exception_handler.layout'])
+      render(:text => @_env['exception_handler.response'], :layout => false)
     end
 
     def dummy_action
